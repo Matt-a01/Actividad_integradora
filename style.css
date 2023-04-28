@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    background-image: url('https://picsum.photos/1200/800');
+    background-size: cover;
+    /*background-color: #4c92e0;
+    background-image: linear-gradient(45deg, #4c92e0 17%, #80D0C7 55%, #12a0ff 100%);    
+    background-color: #62625a;
+    background-image: linear-gradient(43deg, #62625a 20%, #e0e050 55%, #f2253b 89%);*/    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+    
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+    
+.login-header img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid 1px #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+input[type="text"], input[type="password"]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+input[type="submit"]{
+    background-color: #229d37;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

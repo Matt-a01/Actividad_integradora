@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90iTv-TnzsHB9FcVOX-o5qzj1pMogbm0qgugmiyKMJQI73O49rg-EopUNDWz_EqCf_lw&usqp=CAU" alt="Logo">
+            <h1>INICIO DE SESIÓN</h1>
+        </div>
+    
+    <form method="POST" action="index.php">
+
+        <p><input type="text" placeholder="USUARIO" name="usuario" required></p>
+        
+        <p><input type="password" placeholder="CONTRASEÑA" name="contraseña"  required></p>
+
+        <input type="submit" value="Iniciar sesion" name="iniciar-sesion">
+    </form>
+
+    </div>
+
+
+</body>
+<script>
+    // Obtener el parámetro "alerta" de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const alerta = urlParams.get('alerta');
+    
+    // Mostrar la alerta si es necesario
+    if (alerta === '1') {
+        alert('Usuario o contraseña incorrectos');
+    }
+</script>
+</html>
